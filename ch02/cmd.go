@@ -9,7 +9,7 @@ type Cmd struct {
 	helpFlag    bool
 	versionFlag bool
 	cpOption    string
-	XjreOption	string
+	XjreOption	string //使用-Xjre来指定jre目录的位置
 	class       string
 	args        []string
 }

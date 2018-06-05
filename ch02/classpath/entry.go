@@ -5,8 +5,11 @@ import (
 	"strings"
 )
 
-const pathListSeparator = string(os.PathListSeparator)
+const pathListSeparator string = string(os.PathListSeparator)
 
+/*
+	定义Entry接口来表示类路径项
+ */
 type Entry interface {
 	readClass(className string) ([]byte, Entry, error)
 	String() string
