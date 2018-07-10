@@ -19,5 +19,13 @@ func (self *Classpath) ReadClass(className string) ([]byte, Entry, error) {
 }
 
 func (self *Classpath) String() string {
+}
+
+func (classpath *Classpath) parseBootAndExtClasspath(jreOption string) {
 
 }
+func (classpath *Classpath) parseUserClasspath(cpOption string) {
+
+}
+
+
